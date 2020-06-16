@@ -65,7 +65,7 @@ public class CacheableNacosInjectedFactoryTest {
 		properties.setProperty(PropertyKeyConst.SECRET_KEY, "s");
 
 		properties2.setProperty(PropertyKeyConst.CLUSTER_NAME, "nc");
-		properties2.setProperty(PropertyKeyConst.SERVER_ADDR, "127.0.0.1");
+		properties2.setProperty(PropertyKeyConst.SERVER_ADDR, "127.0.0.1:8848");
 		properties2.setProperty(PropertyKeyConst.ACCESS_KEY, "a");
 		properties2.setProperty(PropertyKeyConst.SECRET_KEY, "s");
 	}

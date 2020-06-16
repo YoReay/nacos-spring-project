@@ -16,8 +16,8 @@
  */
 package com.alibaba.nacos.spring.convert.converter.config;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.nacos.api.config.convert.NacosConfigConverter;
+import com.alibaba.nacos.common.utils.JacksonUtils;
 import com.alibaba.nacos.spring.test.User;
 
 /**
@@ -35,6 +35,6 @@ public class UserNacosConfigConverter implements NacosConfigConverter<User> {
 
 	@Override
 	public User convert(String source) {
-		return JSON.parseObject(source, User.class);
+		return JacksonUtils.toObj(source, User.class);
 	}
 }

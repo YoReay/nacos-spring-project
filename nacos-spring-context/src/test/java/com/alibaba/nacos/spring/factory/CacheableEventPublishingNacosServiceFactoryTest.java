@@ -70,7 +70,7 @@ public class CacheableEventPublishingNacosServiceFactoryTest
 
 	@Before
 	public void init() {
-		properties.setProperty(PropertyKeyConst.SERVER_ADDR, "127.0.0.1");
+		properties.setProperty(PropertyKeyConst.SERVER_ADDR, "127.0.0.1:8848");
 	}
 
 	@Test

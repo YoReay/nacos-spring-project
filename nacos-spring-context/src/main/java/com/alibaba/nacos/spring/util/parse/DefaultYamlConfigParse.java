@@ -111,7 +111,7 @@ public class DefaultYamlConfigParse extends AbstractConfigParse {
 			Map<String, Object> source, String path) {
 		for (Map.Entry<String, Object> entry : source.entrySet()) {
 			String key = entry.getKey();
-			if (!com.alibaba.nacos.client.utils.StringUtils.isBlank(path)) {
+			if (!com.alibaba.nacos.common.utils.StringUtils.isBlank(path)) {
 				if (key.startsWith("[")) {
 					key = path + key;
 				}
